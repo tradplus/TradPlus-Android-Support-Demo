@@ -89,6 +89,11 @@
             android:configChanges="keyboardHidden|orientation|screenSize" />
 
         <activity
+            android:name=".nativeads.NativeCacheActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+
+        <activity
             android:name=".nativeads.DrawNativeExpressVideoActivity"
             android:launchMode="singleTask"
             android:configChanges="keyboard|orientation|screenSize"

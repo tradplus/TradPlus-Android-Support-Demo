@@ -9,8 +9,6 @@ repositories {
     maven { url 'https://dl.bintray.com/tradplus/support'}
     // Admob
     maven { url 'https://maven.google.com' }
-    // Ogury
-    maven { url 'https://maven.ogury.co'}
     // Mopub
     maven { url "https://s3.amazonaws.com/moat-sdk-builds" }
     // IronSource
@@ -21,6 +19,8 @@ repositories {
     maven { url  "https://fyber.bintray.com/marketplace"}
     // Maio
     maven{ url "https://imobile-maio.github.io/maven" }
+    // Ogury
+    maven { url 'https://maven.ogury.co'}
     // Juliang
     maven { url "http://nexus.deemob.com/repository/maven-public/" }
 
@@ -43,8 +43,8 @@ android {
         applicationId "com.tradplus.demo"
         minSdkVersion 23
         targetSdkVersion 28
-        versionCode 6
-        versionName "6.2.2"
+        versionCode 5
+        versionName "5.6.3"
     }
 
     buildTypes {
@@ -56,9 +56,6 @@ android {
 }
 
 dependencies {
-
-    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
-
     //补充Support v7插件的引入，否则会集成失败
     //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:28.0.0'
@@ -73,15 +70,13 @@ dependencies {
     }
 
     //TradPlus
-    implementation 'com.tradplus.ads:tradplus-sdk:6.2.2'
-    implementation 'com.tradplus.ads:tradplus-core:6.2.2'
-    implementation 'com.tradplus.ads:tradplus:6.2.2'
+    implementation 'com.tradplus.ads:tradplus-sdk:5.6.3'
 
     // Admob
     implementation 'com.google.android.gms:play-services-ads:17.2.1'
-    implementation 'com.tradplus.ads.google:tradplus-google:2.6.2.2'
+    implementation 'com.tradplus.ads.google:tradplus-google:2.5.6.3'
     // Vungle
-    implementation 'com.tradplus.ads.vungle:tradplus-vungle:7.6.2.2'
+    implementation 'com.tradplus.ads.vungle:tradplus-vungle:7.5.6.3'
     implementation 'com.google.android.gms:play-services-basement:16.0.0'
     implementation 'com.google.android.gms:play-services-ads-identifier:16.0.0'
     //Required Third-party Dependencies
@@ -94,9 +89,9 @@ dependencies {
 
     // Facebook
     implementation 'com.facebook.android:audience-network-sdk:6.2.0'
-    implementation 'com.tradplus.ads.facebook:tradplus-facebook:1.6.2.2'
+    implementation 'com.tradplus.ads.facebook:tradplus-facebook:1.5.6.3'
     // Mopub
-    implementation 'com.tradplus.ads.mopub:tradplus-mopub:3.6.2.2'
+    implementation 'com.tradplus.ads.mopub:tradplus-mopub:3.5.6.3'
     //For banners
     implementation ('com.mopub:mopub-sdk-banner:5.8.0') {
         transitive = true
@@ -119,35 +114,35 @@ dependencies {
     }
     // Applovin
     implementation 'com.applovin:applovin-sdk:9.14.12'
-    implementation 'com.tradplus.ads.applovin:tradplus-applovin:9.6.2.2'
+    implementation 'com.tradplus.ads.applovin:tradplus-applovin:9.5.6.3'
     // IronSource
     implementation 'com.ironsource.sdk:mediationsdk:7.0.3.1'
-    implementation 'com.tradplus.ads.ironsource:tradplus-ironsource:10.6.2.2'
+    implementation 'com.tradplus.ads.ironsource:tradplus-ironsource:10.5.6.3'
     // Tapjoy
     implementation 'com.tapjoy:tapjoy-android-sdk:12.7.1@aar'
-    implementation 'com.tradplus.ads.tapjoy:tradplus-tapjoy:6.6.2.2'
+    implementation 'com.tradplus.ads.tapjoy:tradplus-tapjoy:6.5.6.3'
     // Adcolony
     implementation 'com.adcolony:sdk:4.2.4'
-    implementation 'com.tradplus.ads.adcolony:tradplus-adcolony:4.6.2.2'
+    implementation 'com.tradplus.ads.adcolony:tradplus-adcolony:4.5.6.3'
     // Pangle
 //    implementation 'com.bytedance.sdk:pangle-sdk:3.4.1.1'
-//    implementation 'com.tradplus.ads.tt_fpangolin:tradplus-tt_fpangolin:19.6.2.2'
+//    implementation 'com.tradplus.ads.tt_fpangolin:tradplus-tt_fpangolin:19.5.6.3'
     // UnityAds
-    implementation 'com.tradplus.ads.tradplus-unity:tradplus-unity:5.6.2.2'
+    implementation 'com.tradplus.ads.tradplus-unity:tradplus-unity:5.5.6.3'
     // Fyber
     implementation 'com.fyber.vamp:core-sdk:7.7.4'
     implementation 'com.fyber.vamp:video-kit:7.7.4'
     implementation 'com.fyber.vamp:mraid-kit:7.7.4'
 //    implementation 'com.google.android.gms:play-services-ads-identifier:16.0.0'
-    implementation 'com.tradplus.ads.fyber:tradplus-fyber:24.6.2.2'
+    implementation 'com.tradplus.ads.fyber:tradplus-fyber:24.5.6.3'
     // Maio
 //    implementation 'com.google.android.gms:play-services-ads:17.2.1'
-    implementation 'com.tradplus.ads.maio:tradplus-maio:31.6.2.2'
+    implementation 'com.tradplus.ads.maio:tradplus-maio:31.5.6.3'
     // Ogury
     implementation 'co.ogury:ogury-sdk:5.0.5'
-    implementation 'com.tradplus.ads.ogury:tradplus-ogury:34.6.2.2'
+    implementation 'com.tradplus.ads.ogury:tradplus-ogury:34.5.6.3'
     // Kidoz
-    implementation 'com.tradplus.ads.kidoz:tradplus-kidoz:37.6.2.2'
+    implementation 'com.tradplus.ads.kidoz:tradplus-kidoz:37.5.6.3'
     implementation 'org.greenrobot:eventbus:3.2.0'
     implementation 'com.kidoz.sdk:KidozSDK:8.9.0@aar'
 //    implementation 'com.android.support:support-v4:28.0.0'
@@ -155,32 +150,29 @@ dependencies {
 
     //=========以下是国内源=========国内源不能上Google Play，集错会无法上架
 
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+
     //Toutiao 国内穿山甲，注意国内穿山甲和海外穿山甲只能集成一个
-    implementation 'com.tradplus.ads.toutiao:tradplus-toutiao:17.6.2.2'
+    implementation 'com.tradplus.ads.toutiao:tradplus-toutiao:17.5.6.3'
 //    implementation(name: 'open_ad_sdk_cn_v3.5.0.3', ext: 'aar')
 
     // Kuaishou
-    implementation 'com.tradplus.ads.kwad:tradplus-kwad:20.6.2.2'
+    implementation 'com.tradplus.ads.kwad:tradplus-kwad:20.5.6.3'
 
     // Sigmob
-    implementation 'com.tradplus.ads.sigmob:tradplus-sigmob:21.6.2.2'
+    implementation 'com.tradplus.ads.sigmob:tradplus-sigmob:21.5.6.3'
 
     // Youdao
-    implementation 'com.tradplus.ads.youdao:tradplus-youdao:25.6.2.2'
+    implementation 'com.tradplus.ads.youdao:tradplus-youdao:25.5.6.3'
 
     // Tencent
     implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.6.5.2@aar'
-    implementation 'com.tradplus.ads.txadnet:tradplus-txadnet:16.6.2.2'
-//    implementation(name: 'GDTSDK.unionNormal.4.332.1202', ext: 'aar')
+    implementation 'com.tradplus.ads.txadnet:tradplus-txadnet:16.5.6.3'
+//    implementation(name: 'GDTSDK.unionNormal.4.330.1200', ext: 'aar')
 
     // Juliang
     implementation 'com.joomob.android.sdk:common:1.0.9.0'
-    implementation 'com.tradplus.ads.joomob:tradplus-joomob:35.6.2.2'
-
-    //使用交推广
-    implementation 'com.tradplus.ads.crosspro:tradplus-crosspromotion:27.6.2.02'
-    //使用交推广并且在国内发布，同时需要引入
-//    implementation 'com.tradplus.china:tradplus-china_plugin:6.2.2'
+    implementation 'com.tradplus.ads.joomob:tradplus-joomob:35.5.6.3'
 
 
 }
