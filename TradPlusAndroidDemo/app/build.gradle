@@ -96,6 +96,7 @@ dependencies {
     // Facebook
     implementation 'com.facebook.android:audience-network-sdk:6.4.0'
     implementation 'com.tradplusad:tradplus-facebook:1.6.4.1'
+
     // Mopub
     implementation 'com.tradplusad:tradplus-mopub:3.6.4.1'
     //For banners
