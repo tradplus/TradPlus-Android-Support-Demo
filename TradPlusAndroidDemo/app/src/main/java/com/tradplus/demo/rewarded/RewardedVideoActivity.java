@@ -141,6 +141,11 @@ public class RewardedVideoActivity extends AppCompatActivity  {
                 // 给用户发放奖励
                 // 在V6.4.5以后的版本，可以根据三方广告平台的文档来增加奖励验证功能（奖励验证需要开发者后台配合，TradPlus不提供后台服务奖励验证的功能）
             }
+
+            @Override
+            public void onAdVideoError(TPAdInfo tpAdInfo) {
+
+            }
         });
 
         // 监听每一层广告的加载情况，非特殊需求可以不实现
@@ -161,6 +166,21 @@ public class RewardedVideoActivity extends AppCompatActivity  {
             public void oneLayerLoaded(TPAdInfo tpAdInfo) {
                 Log.i(TAG, "oneLayerLoaded:  广告"+ tpAdInfo.adSourceName +" 加载成功");
                 tv.setText("oneLayerLoaded:  广告"+ tpAdInfo.adSourceName +" 加载成功");
+            }
+
+            @Override
+            public void onLoadAdStart(TPAdInfo tpAdInfo) {
+
+            }
+
+            @Override
+            public void onBiddingStart(TPAdInfo tpAdInfo) {
+
+            }
+
+            @Override
+            public void onBiddingEnd(TPAdInfo tpAdInfo) {
+
             }
         });
     }

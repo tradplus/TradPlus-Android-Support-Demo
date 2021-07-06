@@ -159,6 +159,21 @@ public class InterstitialActivity extends AppCompatActivity  {
                 Log.i(TAG, "oneLayerLoaded:  广告"+ tpAdInfo.adSourceName +" 加载成功");
                 tv.setText("oneLayerLoaded:  广告"+ tpAdInfo.adSourceName +" 加载成功");
             }
+
+            @Override
+            public void onLoadAdStart(TPAdInfo tpAdInfo) {
+
+            }
+
+            @Override
+            public void onBiddingStart(TPAdInfo tpAdInfo) {
+
+            }
+
+            @Override
+            public void onBiddingEnd(TPAdInfo tpAdInfo) {
+
+            }
         });
     }
 }
