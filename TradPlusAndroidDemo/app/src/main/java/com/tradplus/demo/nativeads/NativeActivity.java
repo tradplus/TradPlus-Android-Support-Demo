@@ -175,6 +175,21 @@ public class NativeActivity extends AppCompatActivity {
             public void oneLayerLoaded(TPAdInfo tpAdInfo) {
                 // 每一层广告加载成功都会回调这个方法
             }
+
+            @Override
+            public void onLoadAdStart(TPAdInfo tpAdInfo) {
+
+            }
+
+            @Override
+            public void onBiddingStart(TPAdInfo tpAdInfo) {
+
+            }
+
+            @Override
+            public void onBiddingEnd(TPAdInfo tpAdInfo) {
+
+            }
         });
 
         // 部分渠道不能在TradPlus后台设置宽高，可以在load前传入，尺寸dp
