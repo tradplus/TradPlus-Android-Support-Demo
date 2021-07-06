@@ -39,54 +39,19 @@
     </RadioGroup>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" >
         <Button
-            android:layout_width="wrap_content" android:id="@+id/btn_start" android:text="start"
-            android:layout_height="wrap_content" />
-        <Button
-            android:layout_width="wrap_content" android:id="@+id/btn_add" android:text="add datas"
-            android:layout_height="wrap_content" />
-        <CheckBox
-            android:layout_width="wrap_content" android:id="@+id/check_layout" android:text="是否有布局"
+            android:id="@+id/btn_add"
+            android:text="add datas"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
-
-
-    <RadioGroup android:visibility="gone"
-        android:id="@+id/rg_fra_group_orientation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <RadioButton
-            android:id="@+id/rb_fra_orientation_v"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="垂直滚动"
-            android:textColor="@android:color/black"
-            android:textSize="13sp" />
-
-        <RadioButton
-            android:id="@+id/rb_fra_orientation_h"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="水平滚动"
-            android:textColor="@android:color/black"
-            android:textSize="13sp" />
-
-    </RadioGroup>
 
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/my_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
-    <SurfaceView
-        android:layout_width="0dp"
-        android:layout_height="0dp" />
 
 </LinearLayout>

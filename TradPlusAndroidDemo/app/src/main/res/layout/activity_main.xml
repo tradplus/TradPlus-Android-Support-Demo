@@ -231,22 +231,6 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/offerwall_ad"
-                android:layout_width="200.0dip"
-                android:layout_height="50.0dip"
-                android:gravity="center"
-                android:text="@string/OfferWall"
-                android:textAllCaps="false"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <Button
                 android:id="@+id/native_ad_advanced"
                 android:layout_width="200.0dip"
                 android:layout_height="50.0dip"
@@ -338,5 +322,20 @@
                 android:textSize="16sp" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/offerwall_ad"
+                android:layout_width="200.0dip"
+                android:layout_height="50.0dip"
+                android:gravity="center"
+                android:text="@string/OfferWall"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
