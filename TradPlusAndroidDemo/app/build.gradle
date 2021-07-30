@@ -130,6 +130,7 @@ dependencies {
     implementation 'com.tradplusad:tradplus-adcolony:4.6.8.0'
     // Pangle
 //    implementation 'com.tradplusad:tradplus-pangle:19.6.7.0'
+//    implementation fileTree(include: ['*.aar'], dir: 'Pangle_OS_libs')
     // UnityAds
     implementation 'com.tradplusad:tradplus-unity:5.6.8.0'
     // Fyber
